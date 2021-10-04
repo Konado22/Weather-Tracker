@@ -1,0 +1,24 @@
+/* *{
+    border: red solid 1px;
+} */
+
+
+#pageHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+    font-size: 60px;
+}
+#searchBtn:hover {
+color: white;
+background-color: blue;
+}
+aside {
+    display: inline;
+    left: 0%;
+}
+#rightDiv {
+    display: flex;
+    justify-content: center;
+}
