@@ -13,25 +13,42 @@
 </header>
 <body>
     <div id="mainContainer">
-        <div id="currentCityContainer">
-        <div id="currentCity"></div>
-            <!-- To add Current City Card -->
+        <!-- <div id="currentCityContainer">
+            <div class="card" style="width: 80%;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">City info displayed here</p>
+                  <a href="#" class="card-link">return link to created button</a>
+                </div>
+              </div>
+        </div> -->
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          </div>
+        <div id="forcastDiv">
+            <h2>5 Day Forcast:</h2>
+            <div id="forcastDiv"></div>
+            <div id="5daycast"></div>
         </div>
-        <div id="forcatDiv"></div>
-        <div id="forcastDiv"></div>
-        <div id="5daycast"></div>
-    </div>
-        
     </div> 
     <div id="sideContainer"></div> 
-    <aside id="searchArea">
-        <div class="form-group">
-            <label for="exampleInputPassword1">Search City:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="San Diego">
-        <button id="searchBtn">Search</button>
-        <div id="searchHistory"></div>
-    </aside>
-
+        <aside id="searchArea">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Search City:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Denver" width= "20%"></textarea>
+                <button id="searchBtn" type="submit " value="search">Search </button>
+                <div id="searchHistory">
+                    <ul></ul>
+                </div>
+        </aside>
+    </div>
 </body>
 <script> href="script.js"</script>
 </html>

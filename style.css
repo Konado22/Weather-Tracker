@@ -14,11 +14,17 @@
 color: white;
 background-color: blue;
 }
-aside {
-    display: inline;
-    left: 0%;
-}
-#rightDiv {
+
+#mainContainer {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-content: space-between;
+}
+#sideContainer {
+    position: absolute;
+    display:flex;
+    justify-content: left;
+}
+#searchBtn {
+    border-bottom: black solid 1px;
 }
