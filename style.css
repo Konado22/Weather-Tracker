@@ -22,6 +22,11 @@ display: flex;
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: lightcoral;
+}
+#mainContainer #5forcastDiv{
+    display: flex;
+    flex-direction: row;
 }
 #sideContainer {
   display: flex;
@@ -42,8 +47,9 @@ display: flex;
     color: white;
     border: white solid 1px;
 }
-#5dayCast div {
+#5dayCast  {
 display: flex;
+flex-direction: row;
 
 }
 *card {
@@ -52,4 +58,11 @@ display: flex;
 #Iconic {
     border: solid black 1px;
    font-weight: bolder;
+}
+.card {
+    background-color: lightblue;
+}
+.card img{
+    background-color: grey;
+    border: black solid 4px;
 }
