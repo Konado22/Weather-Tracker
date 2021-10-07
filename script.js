@@ -40,7 +40,11 @@ function callCity (){
     .then(response => response.json())
     .then( data => {
         console.log(data)
-        headerFill.innerText= data.name
+        var iconCode = data.weather[0].icon;
+        var iconCodeScript= "http://openweathermap.org/img/wn/" + iconCode + "@2x.png"
+        headerFill.innerHTML= data.name;
+        var iconic = document.getElementById("Iconic")
+        var iconicCall= iconic.setAttribute("src", iconCodeScript)
     tempSpace.innerText ="Temperature:" + data.main.temp
     windSpace.innerText = "Wind Speed:" +data.wind.speed
     humidSpace.innerText = "Humidity:" + data.main.humidity 

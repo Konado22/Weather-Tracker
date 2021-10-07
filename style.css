@@ -49,3 +49,7 @@ display: flex;
 *card {
     border: black solid 1px;
 }
+#Iconic {
+    border: solid black 1px;
+   font-weight: bolder;
+}
