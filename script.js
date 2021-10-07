@@ -65,29 +65,29 @@ fetch(requestUrl2)
     for(let i=0; i<4; i++){
         // date1.innerText(moment().format("MMM Do YY");)
         // icon1.innerText(data.list[i].main.temp)
-        temp1.innerText(data.list[0].main.temp)
-        wind1.innerText(data.list[0].wind.speed)
-        humidity1.innerText(data.list[0])
-        // date2.innerText(moment().format("MMM Do YY");)
-        // icon2.innerText(data.list[i])
-        temp2.innerText(data.list[1].main.temp)
-        wind2.innerText(data.list[1].wind.speed)
-        humidity2.innerText(data.list[1])
-        // date3.innerText(data.list[i])
-        // icon3.innerText(data.list[i])
-        temp3.innerText(data.list[2].main.temp)
-        wind3.innerText(data.list[2].wind.speed)
-        humidity3.innerText(data.list[2])
-        // date4.innerText(data.list[i])
-        // icon4.innerText(data.list[i])
-        temp4.innerText(data.list[3].main.temp)
-        wind4.innerText(data.list[3].wind.speed)
-        humidity4.innerText(data.list[3])
-        // date5.innerText(data.list[i])
-        // icon5.innerText(data.list[i])
-        temp5.innerText(data.list[4].main.temp)
-        wind5.innerText(data.list[4].wind.speed)
-        humidity5.innerText(data.list[4])
+        temp1.innerText=data.list[0].main.temp
+        wind1.innerText=data.list[0].wind.speed
+        humidity1.innerText=data.list[0].main.humidity
+        // date2.innerText=moment=.format="MMM Do YY";
+        // icon2.innerText=data.list[i]
+        temp2.innerText=data.list[1].main.temp
+        wind2.innerText=data.list[1].wind.speed
+        humidity2.innerText=data.list[1].main.humidity
+        // date3.innerText=data.list[i]
+        // icon3.innerText=data.list[i]
+        temp3.innerText=data.list[2].main.temp
+        wind3.innerText=data.list[2].wind.speed
+        humidity3.innerText=data.list[2].main.humidity
+        // date4.innerText=data.list[i]
+        // icon4.innerText=data.list[i]
+        temp4.innerText=data.list[3].main.temp
+        wind4.innerText=data.list[3].wind.speed
+        humidity4.innerText=data.list[3].main.humidity
+        // date5.innerText=data.list[i]
+        // icon5.innerText=data.list[i]
+        temp5.innerText=data.list[4].main.temp
+        wind5.innerText=data.list[4].wind.speed
+        humidity5.innerText=data.list[4].main.humidity
     }
         
     
