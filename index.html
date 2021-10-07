@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>
         Weather Finder
@@ -11,44 +13,38 @@
 <header>
     <h1 id="pageHeader"> Weather Finder</h1>
 </header>
+
 <body>
-    <div id="mainContainer">
-        <!-- <div id="currentCityContainer">
-            <div class="card" style="width: 80%;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">City info displayed here</p>
-                  <a href="#" class="card-link">return link to created button</a>
+    <div id="bigParent">
+        <div id="sideContainer">
+            <aside id="searchArea">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Search City:</label>
+                    <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Denver">
+                    <input type="submit" id="searchBtn" type="submit " value="submit">
+                    <div id="searchHistory">
+                        <ul id="searchHistoryList"></ul>
                 </div>
-              </div>
-        </div> -->
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>
-        <div id="forcastDiv">
-            <h2>5 Day Forcast:</h2>
-            <div id="forcastDiv"></div>
-            <div id="5daycast"></div>
+            </aside>
         </div>
-    </div> 
-    <div id="sideContainer"></div> 
-        <aside id="searchArea">
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Search City:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Denver" width= "20%"></textarea>
-                <button id="searchBtn" type="submit " value="search">Search </button>
-                <div id="searchHistory">
-                    <ul></ul>
-                </div>
-        </aside>
+        <div id="mainContainer">
+            <div class="jumbotron">
+                <h1 class="display-4"></h1>
+                <p class="temp"></p>
+                <p class="wind"></p>
+                <p class="humidity"></p>
+                <p class="uv"></p>
+
+            </div>
+            <div id="forcastDiv">
+                <h2>5 Day Forcast:</h2>
+                <div id="forcastDiv"></div>
+                <div id="5daycast"></div>
+            </div>
+        </div>
+      
     </div>
 </body>
-<script> href="script.js"</script>
+<script src = "script.js"></script>
+
 </html>

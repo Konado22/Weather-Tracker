@@ -1,6 +1,6 @@
-/* *{
+*{
     border: red solid 1px;
-} */
+}
 
 
 #pageHeader{
@@ -14,16 +14,19 @@
 color: white;
 background-color: blue;
 }
+#bigParent {
+display: flex;
+}
 
 #mainContainer {
     display: flex;
-    justify-content: right;
-    align-content: space-between;
+    flex-direction: column;
+    width: 100%;
 }
 #sideContainer {
-    position: absolute;
-    display:flex;
-    justify-content: left;
+  display: flex;
+  flex-direction: column;
+  width: 30%;;
 }
 #searchBtn {
     border-bottom: black solid 1px;
