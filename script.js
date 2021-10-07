@@ -67,27 +67,32 @@ fetch(requestUrl2)
         console.log(data);
     for(let i=0; i<4; i++){
         // date1.innerText(moment().format("MMM Do YY");)
-        // icon1.innerText(data.list[i].main.temp)
+        icon1.setAttribute("src","http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + "@2x.png" ) 
+        document.getElementById("iconInfo1").innerText = data.list[0].weather[0].description;
         temp1.innerText=data.list[0].main.temp
         wind1.innerText=data.list[0].wind.speed
         humidity1.innerText=data.list[0].main.humidity
         // date2.innerText=moment=.format="MMM Do YY";
-        // icon2.innerText=data.list[i]
+        icon2.setAttribute("src","http://openweathermap.org/img/wn/" + data.list[1].weather[0].icon + "@2x.png" ) 
+        document.getElementById("iconInfo2").innerText = data.list[1].weather[0].description;
         temp2.innerText=data.list[1].main.temp
         wind2.innerText=data.list[1].wind.speed
         humidity2.innerText=data.list[1].main.humidity
         // date3.innerText=data.list[i]
-        // icon3.innerText=data.list[i]
+        icon3.setAttribute("src","http://openweathermap.org/img/wn/" + data.list[2].weather[0].icon + "@2x.png" )
+        document.getElementById("iconInfo3").innerText = data.list[2].weather[0].description;
         temp3.innerText=data.list[2].main.temp
         wind3.innerText=data.list[2].wind.speed
         humidity3.innerText=data.list[2].main.humidity
         // date4.innerText=data.list[i]
-        // icon4.innerText=data.list[i]
+        icon4.setAttribute("src","http://openweathermap.org/img/wn/" + data.list[3].weather[0].icon + "@2x.png" ) 
+        document.getElementById("iconInfo4").innerText = data.list[3].weather[0].description;
         temp4.innerText=data.list[3].main.temp
         wind4.innerText=data.list[3].wind.speed
         humidity4.innerText=data.list[3].main.humidity
         // date5.innerText=data.list[i]
-        // icon5.innerText=data.list[i]
+        icon5.setAttribute("src","http://openweathermap.org/img/wn/" + data.list[4].weather[0].icon + "@2x.png" )
+        document.getElementById("iconInfo5").innerText = data.list[4].weather[0].description;
         temp5.innerText=data.list[4].main.temp
         wind5.innerText=data.list[4].wind.speed
         humidity5.innerText=data.list[4].main.humidity
