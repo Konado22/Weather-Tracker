@@ -1,6 +1,6 @@
-*{
+/* *{
     border: red solid 1px;
-}
+} */
 
 
 #pageHeader{
@@ -30,4 +30,13 @@ display: flex;
 }
 #searchBtn {
     border-bottom: black solid 1px;
+}
+#searchHistoryList {
+    display: flex;
+    flex-direction: column;
+}
+#searchHistoryList li :hover{
+    background-color: blue;
+    color: white;
+    border: white solid 1px;
 }
