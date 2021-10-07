@@ -31,9 +31,7 @@ var temp5 = document.getElementById("temp5")
 var wind5 = document.getElementById("wind5")
 var humidity5 = document.getElementById("humidity5")
 var addStuff = document.createElement("p")
-
-
-
+var headerFill = document.getElementById("cityName")
 var cityList = []
 function callCity (){
     var constMe = document.getElementById("exampleFormControlTextarea1");
@@ -42,6 +40,7 @@ function callCity (){
     .then(response => response.json())
     .then( data => {
         console.log(data)
+        headerFill.innerText= data.name
     tempSpace.innerText ="Temperature:" + data.main.temp
     windSpace.innerText = "Wind Speed:" +data.wind.speed
     humidSpace.innerText = "Humidity:" + data.main.humidity 
